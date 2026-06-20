@@ -15,10 +15,9 @@
 
         <!-- Header / Hero -->
         <header class="hero">
-            <div class="hero-overlay"></div>
             <img class="hero-models" src="header-models.png" alt="Collection of die-cast models">
             <div class="hero-content">
-                <img class="hero-logo" src="DHS-logo.png" alt="DHS Diecast logo">
+                <img class="hero-logo" src="logo.png" alt="DHS Diecast logo">
                 <h1 class="hero-title">
                     <span class="hero-title-line">Sell Your</span>
                     <span class="hero-title-line hero-title-line--accent">Diecast Collection</span>
@@ -29,31 +28,33 @@
         </header>
 
         <!-- Category cards -->
-        <section class="categories" aria-label="Collection categories we purchase">
-            <article class="category-card">
-                <i class="fa-solid fa-helmet-safety category-card-icon"></i>
-                <h3 class="category-card-label">Construction</h3>
-            </article>
-            <article class="category-card">
-                <i class="fa-solid fa-car-side category-card-icon"></i>
-                <h3 class="category-card-label">Classic Cars</h3>
-            </article>
-            <article class="category-card">
-                <i class="fa-solid fa-truck category-card-icon"></i>
-                <h3 class="category-card-label">Trucks</h3>
-            </article>
-            <article class="category-card">
-                <i class="fa-solid fa-medal category-card-icon"></i>
-                <h3 class="category-card-label">Military</h3>
-            </article>
-            <article class="category-card">
-                <i class="fa-solid fa-plane category-card-icon"></i>
-                <h3 class="category-card-label">Aviation</h3>
-            </article>
-            <article class="category-card">
-                <i class="fa-solid fa-tractor category-card-icon"></i>
-                <h3 class="category-card-label">Agriculture</h3>
-            </article>
+        <section class="categories-section" aria-label="Collection categories we purchase">
+            <div class="categories">
+                <article class="category-card">
+                    <i class="fa-solid fa-helmet-safety category-card-icon"></i>
+                    <h3 class="category-card-label">Construction</h3>
+                </article>
+                <article class="category-card">
+                    <i class="fa-solid fa-car-side category-card-icon"></i>
+                    <h3 class="category-card-label">Classic Cars</h3>
+                </article>
+                <article class="category-card">
+                    <i class="fa-solid fa-truck category-card-icon"></i>
+                    <h3 class="category-card-label">Trucks</h3>
+                </article>
+                <article class="category-card">
+                    <i class="fa-solid fa-medal category-card-icon"></i>
+                    <h3 class="category-card-label">Military</h3>
+                </article>
+                <article class="category-card">
+                    <i class="fa-solid fa-plane category-card-icon"></i>
+                    <h3 class="category-card-label">Aviation</h3>
+                </article>
+                <article class="category-card">
+                    <i class="fa-solid fa-tractor category-card-icon"></i>
+                    <h3 class="category-card-label">Agriculture</h3>
+                </article>
+            </div>
         </section>
 
         <!-- Sell CTA -->
@@ -73,7 +74,7 @@
                 </a>
             </div>
             <div class="sell-visual">
-                <img class="sell-box" src="DHS-diecast-box-cropped.png" alt="DHS Diecast branded shipping box">
+                <img class="sell-box" src="Trainz-Box.png" alt="DHS Diecast branded shipping box">
             </div>
         </section>
 
@@ -106,9 +107,13 @@
 
         <!-- Footer -->
         <footer class="footer">
-            <p class="footer-copyright">© 2026 DHS Diecast. All Rights Reserved. A Trainz Company.</p>
+            <p class="footer-copyright">© <span id="year"></span> DHS Diecast. All Rights Reserved. A Trainz Company.</p>
         </footer>
 
     </div>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>
