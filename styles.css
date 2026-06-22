@@ -20,12 +20,12 @@
 
     /* Text on light */
     --text: #16263d;
-    --text-muted: #5c6b7d;
+    --text-muted: #475563;
     --text-dim: #7d8da0;
 
     /* Text on dark */
     --text-light: #f4f6f9;
-    --text-light-muted: #b7c2cf;
+    --text-light-muted: #cbd5e1;
 
     --radius: 16px;
     --maxw: 1100px;
