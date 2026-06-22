@@ -152,6 +152,15 @@ body {
     box-shadow: 0 14px 28px rgba(20, 36, 54, 0.13);
 }
 
+.category-card-icon,
+.feature-icon,
+.btn-quote svg {
+    width: auto;
+    height: 1em;
+    fill: currentColor;
+    vertical-align: -0.125em;
+}
+
 .category-card-icon {
     font-size: 38px;
     color: var(--navy-800);
@@ -226,7 +235,7 @@ body {
     transition: transform 0.18s ease, box-shadow 0.18s ease, background 0.18s ease;
 }
 
-.btn-quote i {
+.btn-quote svg {
     font-size: 1.5em;
 }
 
@@ -291,7 +300,7 @@ body {
     display: block;
     font-size: 32px;
     color: var(--navy-800);
-    margin-bottom: 16px;
+    margin: 0 auto 16px;
 }
 
 .feature-title {
