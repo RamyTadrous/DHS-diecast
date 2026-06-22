@@ -8,6 +8,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <!-- FOUC guard: size icons before the external stylesheet loads (preserves aspect ratio via viewBox) -->
+    <style>
+        .category-card-icon,
+        .feature-icon,
+        .btn-quote svg { width: auto; height: 1em; }
+        .category-card-icon { font-size: 38px; }
+        .feature-icon { font-size: 32px; }
+        .btn-quote svg { font-size: 27px; }
+    </style>
 </head>
 <body>
     <div class="page">
